@@ -12,6 +12,7 @@ import { EditorTabs, FilterTabs, DecalTypes } from '@/public/config/constants';
 import { downloadCanvasToImage, reader } from '@/public/config/helpers';
 import { fadeAnimation, slideAnimation } from '@/public/config/motion';
 import { AIPicker, ColorPicker, CustomButton, FilePicker, Tab } from '../components';
+import Image from 'next/image';
 
 
 const Customizer = () => {
@@ -138,8 +139,16 @@ const Customizer = () => {
                                         handleClick={() => setActiveEditorTab(tab.name)}
                                     />
                                 ))}
+                                <button className='download-btn' onClick={downloadCanvasToImage}>
+                                    <Image
+                                        src={download}
+                                        alt='download_image'
+                                        className='w-3/5 h-3/5 object-contain'
+                                    />
+                                </button>
 
                                 {generateTabContent()}
+
                             </div>
                         </div>
                     </motion.div>
@@ -170,8 +179,10 @@ const Customizer = () => {
                             />
                         ))}
                     </motion.div>
+
                 </>
             )}
+
         </AnimatePresence>
     )
 }
