@@ -65,7 +65,6 @@ const Customizer = () => {
             })
 
             const data = await response.json();
-            console.log(data);
 
             if (data.photo) {
                 handleDecals(type, data.photo[0].b64_json)

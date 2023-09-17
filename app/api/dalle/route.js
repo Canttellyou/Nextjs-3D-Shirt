@@ -17,11 +17,8 @@ export async function POST(req, { params }) {
             size: '1024x1024',
             response_format: 'b64_json'
         });
-        console.log(response);
 
         const image = response.data;
-        console.log(image);
-
 
         return new Response(JSON.stringify({ photo: image }), { status: 200 })
     } catch (error) {
