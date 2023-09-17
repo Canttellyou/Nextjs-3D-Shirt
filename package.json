@@ -1,0 +1,31 @@
+{
+  "name": "threejs-ecommerce",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@react-three/drei": "^9.83.8",
+    "@react-three/fiber": "^8.14.1",
+    "@splinetool/loader": "^0.9.451",
+    "@splinetool/r3f-spline": "^1.0.2",
+    "@splinetool/react-spline": "^2.2.6",
+    "@splinetool/runtime": "^0.9.443",
+    "autoprefixer": "10.4.15",
+    "framer-motion": "^10.16.4",
+    "maath": "^0.7.0",
+    "next": "13.4.19",
+    "openai": "^4.7.1",
+    "postcss": "8.4.29",
+    "react": "18.2.0",
+    "react-color": "^2.19.3",
+    "react-dom": "18.2.0",
+    "tailwindcss": "3.3.3",
+    "three": "^0.156.1",
+    "valtio": "^1.11.2"
+  }
+}
